@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: darkslategrey;
+    height: 13%;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.logo {
+color: rgb(250, 250, 2);
+float: right;
+padding: 20px;
+font-weight: 750;
+font-size: 35px;
+}
+
+ul{
+    display: inline;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+    list-style: none;
+}
+
+a {
+    float: left;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.active,
+a:hover {
+    background-color: rgb(82, 10, 10);
+    color: white;
+    transition: .2s;
+    text-decoration: none;
+}
+
+main {
+    display: block;
+    background-color: white;
+    padding: 3em 0 3em 0;
+    margin-top: 2rem;
+}
+
+
+h2 {
+    color: maroon;
+    font-weight: 1000;
+    text-align: center;
+}
+
+p {
+padding: 9px;
+font-family: 'lucinda';
+color: black;
+}
+
+/*column container*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+
+.main-column {
+    padding: 20px;
+    margin-top: .3rem;
+}
+
+.main-column div {
+column-count: 1;
+column-gap: 2em;
+}
+
+div h1 {
+    color: rgb(58, 55, 55);
+}
+
+aside {
+display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+min-height: 5%;
+    background: darkslategrey;
+    color: rgb(104, 98, 98);;
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+/* Form action */
+
+form {
+border-radius: 30px;
+color:darkslategrey;
+padding: 10px; 
+}
+
+img {
+    width: 80%;
+    margin: 1em 0 0;
+}
+
+@media only screen and (min-width: 768px){
+    
+    body {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    p {
+        line-height: 1.6em;
+    }
+
+    .main-column {
+        column-count: 2;
+        column-rule-style: solid;
+        column-rule-color: rgb(128, 123, 123);
+    }
+
+    .main-column ~ * {
+        margin-top: 0;
+    }
+
+    h2 {
+        font-size: 3.7rem;
+        margin: 1.2em 0 .2em 0;
+    }
+
+    .row {
+        padding: 4em;
+    }
+
+    .main-column {
+        padding: 2em;
+        background: rgb(252, 250, 250);
+    }
+
+    h3 {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+
+    }
+}
